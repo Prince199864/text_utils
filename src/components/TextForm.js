@@ -27,7 +27,7 @@ function TextForm(props) {
     }
     var handleClear = () => {
         setText("");
-        props.showAlert('success', "Text Cleared");
+        props.showAlert('success', "Text is Cleared");
     }
     return (
         <div className="container" style={props.mode === 'light' ? { backgroundColor: '#accbed', color: 'black' } : { backgroundColor: "black", color: 'white' }}>
