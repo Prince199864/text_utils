@@ -18,7 +18,7 @@ function TextForm(props) {
     const toggleExSpaces = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
-        props.showAlert('success', "Removed Extra Spaces");
+        props.showAlert('success', "Removed the Extra Spaces");
     }
     const handleCopy = () => {
         navigator.clipboard.writeText(text);
