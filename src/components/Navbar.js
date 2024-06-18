@@ -30,7 +30,7 @@ function Navbar(props) {
                             </ul>
                         </li>
                     </ul>
-                    <div className={`mx-3 d-flex justify-content-center text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
+                    <div className={`mx-3 d-flex flex-sm-column justify-content-center text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
                         <i className="bi bi-brightness-high-fill"></i>
                         <div className={`form-check form-switch mx-1 text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
                             <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
