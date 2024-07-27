@@ -42,7 +42,7 @@ function TextForm(props) {
             <button disabled={text.length === 0} type="button" className={`btn butn btn-${props.mode === 'light' ? 'success' : 'secondary'} btn-sm mx-2 my-2`} onClick={handleClear}>Clear Text</button>
             <h3>Text Summary</h3>
             {/* <p> {text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} words and {text.split(/\s+/).join('').length} characters</p> */}
-            <p>{text.trim().replace(/\s+/g, ' ').split(' ').length}word and {text.trim().replace(/\s+/g, ' ').length} alphabets</p>
+            <p>{text.trim().replace(/\s+/g, ' ').split(' ').length} {text.trim().replace(/\s+/g, ' ').split(' ').length === 1?'word':'words'} and {text.trim().replace(/\s+/g, ' ').length} alphabets</p>
             {/* <p>{0.008 * text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} minutes read</p> */}
             <p>{0.008 * text.trim().replace(/\s+/g, ' ').split(' ').length} minutes read</p>
             <h3>Preview</h3>
