@@ -41,7 +41,7 @@ function TextForm(props) {
             <button disabled={text.length === 0} type="button" className={`btn butn btn-${props.mode === 'light' ? 'success' : 'secondary'} btn-sm mx-2 my-2`} onClick={handleCopy}>Copy to Clipboard</button>
             <button disabled={text.length === 0} type="button" className={`btn butn btn-${props.mode === 'light' ? 'success' : 'secondary'} btn-sm mx-2 my-2`} onClick={handleClear}>Clear Text</button>
             <h3>Text Summary</h3>
-            <p> {text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} {text.split(/\s+/).filter((e) => { return e.length !== 0 }).length===1?"word":"words"} and {text.split(/\s+/).join('').length} characters</p>
+            <p> {text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} {text.split(/\s+/).filter((e) => { return e.length !== 0 }).length === 1 ? "word" : "words"} and {text.split(/\s+/).join('').length} characters</p>
             <p>{0.008 * text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} minutes read</p>
             <h3>Preview</h3>
             <p style={{ minHeight: "50px" }}>{!text ? "Nothing to preview" : text}</p>
